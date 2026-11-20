@@ -14,15 +14,3 @@
 | [review-feedback-learning](.agents/skills/review-feedback-learning/SKILL.md) | 人間のレビュー指摘から再発防止に使える観点を抽出する               |
 | [rspec-quality](.agents/skills/rspec-quality/SKILL.md)                       | RSpec の検証内容と検出力を確認する                     |
 | [quizzing](.agents/skills/quizzing/SKILL.md)                                 | 実装や設計を自分の言葉で説明できるか確かめる                   |
-
-## Orca を使うスキル
-
-Orca IDE を起動し、対象リポジトリまたはフォルダを Orca の workspace として開きます。Codex から Orca CLI が使える環境で、対象の checkout と workspace を照合して実行します。[Orca CLI のセットアップ](https://orca.dev/docs/cli/overview)
-
-- `$orca-qa` は組み込みブラウザで操作します。テスト用の URL と操作・期待結果を渡すと、専用プロファイルでケースを走らせて証拠を残します。
-- `$orca-delivery` はタスク文書を受け取り、Orca Orchestration で Claude と Codex の進行・実装・レビュー・QA を管理します。
-- `$cross-review` は対象の差分を受け取り、Orca の依頼元タブに Codex と Claude のペインを開いて相互レビューします。
-
-```text
-$orca-qa http://127.0.0.1:3000/settings で表示名を保存し、リロード後の表示を確認して
-```
