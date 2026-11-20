@@ -1,0 +1,6 @@
+interface:
+  display_name: "相互AIレビュー"
+  short_description: "CodexとClaudeで独立レビューと相互検証を行い、合意した指摘をまとめる"
+  default_prompt: "$cross-review を使って、この差分をCodex Astra ultraとClaude Opus 5.5 maxで相互レビューして。"
+policy:
+  allow_implicit_invocation: false
